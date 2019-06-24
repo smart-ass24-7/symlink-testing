@@ -1,0 +1,10 @@
+# Reference the Dockerfiles to build into Docker images
+build:
+  docker:
+    web: Dockerfile
+release:
+  command:
+    - whoami
+  image: web
+run:
+  web: ./shell.sh
